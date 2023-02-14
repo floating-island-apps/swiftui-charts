@@ -95,7 +95,7 @@ private struct LineChartDemo: View {
 }
 
 private struct AreaChartDemo: View {
-    @State var data2: [CGFloat] = (0..<50).map { _ in .random(in: 0.1...1.0) }
+    @State var data2: [CGFloat] = (40..<60).map { _ in .random(in: 0.1...1.0) }
     
     var body: some View {
         Chart(data: data2)
